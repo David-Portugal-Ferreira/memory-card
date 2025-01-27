@@ -7,7 +7,7 @@ export default function Card({ card, suffle, checkImagesIds }) {
     }
   return (
     <div className="card-img" onClick={handleClick}>
-      <img src={card.images.fixed_height.url} alt="" />
+      <img src={card.images.fixed_height.url} alt={card.alt_text} />
     </div>
   );
 }
