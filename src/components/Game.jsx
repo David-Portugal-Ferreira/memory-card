@@ -6,6 +6,7 @@ export default function Game() {
   const [images, setImages] = useState([]);
   const [imagesIds, setImagesIds] = useState([]);
   const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
   let cards = images.map((card, index) => {
     return (
@@ -20,6 +21,7 @@ export default function Game() {
 
   function checkImagesIds(id) {
     if (imagesIds.includes(id)) {
+      score > bestScore && setBestScore(score);
       setScore(0);
       setImagesIds([]);
     } else {
@@ -56,7 +58,17 @@ export default function Game() {
 
   return (
     <div className="game-wrapper">
-      {images.length === 0 ? <h1>Loading</h1> : cards}
+      {images.length === 0 ? (
+        <h1>Loading</h1>
+      ) : (
+        <>
+          <div className="game-points">
+            <p>Score: {score}</p>
+            <p>Best Score: {bestScore}</p>
+          </div>
+          <div className="game-cards">{cards}</div>
+        </>
+      )}
     </div>
   );
 }

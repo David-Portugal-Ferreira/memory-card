@@ -1,5 +1,9 @@
 .game-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1060px;
+}
+
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
