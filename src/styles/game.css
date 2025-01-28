@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .game-wrapper {
     max-width: 1060px;
 }
@@ -5,5 +7,24 @@
 .game-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+}
+
+.game-points {
+    font-family: 'Press Start 2P', cursive;
+    max-width: 1060px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 400px) {
+    .game-points {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

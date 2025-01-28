@@ -54,6 +54,7 @@ export default function Game() {
     }
 
     fetchData();
+    suffleArray();
   }, []);
 
   return (

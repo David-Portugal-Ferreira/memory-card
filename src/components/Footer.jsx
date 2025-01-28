@@ -3,7 +3,10 @@ import '../styles/footer.css'
 export default function Footer() {
     return (
       <div className="footer">
-        Gifs by <a href="https://giphy.com/">GIPHY</a>
+        <img
+          src="src/assets/Giphy Attribution Marks/Animated Logos/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
+          alt=""
+        />
       </div>
     );
 }
