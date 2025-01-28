@@ -4,7 +4,7 @@ export default function Footer() {
     return (
       <div className="footer">
         <img
-          src="src/assets/Giphy Attribution Marks/Animated Logos/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
+          src='./src/assets/giphy-img.gif'
           alt=""
         />
       </div>
